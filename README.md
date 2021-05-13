@@ -1,6 +1,6 @@
 # cowin-notify
 
-Script will check on cowin if slots are available it will send notification over slack. you can configure it with different platforms such as SMTP/Telegram.
+Script will check on cowin if slots are available for vaccine in group 18+/45+ and send notification over slack. you can configure it with different platforms such as SMTP/Telegram.
 
 Run script using following command
 ```
