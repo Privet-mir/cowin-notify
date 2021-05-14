@@ -46,15 +46,13 @@ while :
 		if [ -z "$AGE45" ]; then
 			echo "Not Available for 45+"
 		else
-			AGE45=$(echo $AGE45 | tr '\n' ' ' | cut -d ' ' -f1)
-			AGE45=$AGE45+
+			AGE45=45+
 			curl -F "text=Slots Available in $STATE1/$DISTRICT1 for AGE $AGE45"  -F channel=$SLACK_ID -F token=xoxb-XXXXXXXXX-XXXXXXXXX-XXXXXXXXXX https://slack.com/api/chat.postMessage
 		fi
 		if [ -z "$AGE18" ]; then
 	                echo "Not Available for 18+"
 	        else
-	                AGE18=$(echo $AGE18 | tr '\n' ' ' | cut -d ' ' -f1)
-	                AGE18=$AGE18+
+	                AGE18=18+
 			curl -F "text=Slots Available in $STATE1/$DISTRICT1 for AGE $AGE18 "  -F channel=$SLACK_ID -F token=xoxb-XXXXXXXXX-XXXXXXXXX-XXXXXXXXXX https://slack.com/api/chat.postMessage
 	        fi
 	
